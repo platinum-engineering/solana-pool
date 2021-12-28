@@ -1,0 +1,23 @@
+[package]
+description = "Created with Anchor"
+edition = "2018"
+name = "solana-pool"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_pool"
+
+[features]
+cpi = ["no-entrypoint"]
+default = []
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+
+[dependencies]
+anchor-lang = "0.19"
+anchor-spl = "0.19"
+
+fixed = "1.11"
+az = "1.2"
